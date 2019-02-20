@@ -1,0 +1,151 @@
+
+\documentclass[11pt,a4paper,roman]{moderncv}
+% modern themes
+\moderncvstyle{banking}                            
+\moderncvcolor{blue}                               
+\nopagenumbers{}                                  
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{comment}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+
+\usepackage{import}
+
+% personal data
+\name{Cao Jilin}{}
+
+\address{2315 Bowditch Street, Berkeley, CA 94706 }{}{}
+
+  
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+\begin{document}
+
+\makecvtitle
+\vspace*{-23mm}
+
+\begin{center}
+\begin{tabular}{ c c c c }
+ \faGlobe\enspace caojilin.net & \faEnvelopeO\enspace caojilin@berkeley.edu & \faGithub\enspace caojilin &  \faMobile\enspace 510-646-3844\\  
+\end{tabular}
+\end{center}
+
+\section{EDUCATION}
+{\customcventry{May 2019}{Bachelor of Arts in Statistics}{University of California, Berkeley}{Berkeley, CA}{}{}}
+\section{Key Skills}
+Programming Languages: Python, R, Java, P5
+
+\section{Related Coursework}
+Deep Learning, Linear Programming and Network Flow, Linear Modeling, Machine Learning, Algorithms, Data Structure, Probability, Linear Algebra
+
+\section{ACADEMIC PROJECTS}
+%https://github.com/caojilin
+{\customcvproject{Boston Housing | R}{Sep 2018 - Nov 2018}
+  {\begin{itemize}
+    \item A systematic data analysis using linear model. Predicting the Value of a Boston Home Using Neighborhood Features.
+Started by doing EDA, then performing diagnostics: used various model selection techniques such as AIC, BIC,
+Cross-Validation etc. and removed outliers to improve the model.
+  \end{itemize}
+  }
+}
+
+{\customcvproject{Digits classification and Language Identification | Python}{Feb 2018 – May 2018}
+{\begin{itemize}
+  \item Implemented neural network models, using gradient descent to optimize loss function and other techniques to improve the
+model performance.
+\end{itemize}
+}
+
+{\customcvproject{BearMaps | Java}{Jan 2018 – May 2018}
+{\begin{itemize}
+  \item Programmed the back-end of a web mapping application of Berkeley, CA that supported features such as image rastering at
+different zoom levels, autocomplete location search, and route mapping
+\end{itemize}
+}
+}
+
+
+\section{EXPERIENCE}
+
+{\customcventry{June 2017 - July 2017}{State Grid Corporation}{Data Analyst Intern}{HangZhou, China}{}
+{\begin{itemize}
+  \item Analyzed how the power usage distributed in different areas in a city and how the price of electricity relates to the
+population of the city and other factors. Helped company to decide the location of installing new equipment. Presented a
+visualization report to the company manager
+\end{itemize}
+}
+}
+
+{\customcventry{Sep 2018 - Now}{}{Lab Assistant for CS 61B}{Berkeley, CA}{}
+{\begin{itemize}
+  \item Every week, I helped students understand the material covered in class and helped them work through their weekly labs
+and also worked at Office Hours.
+\end{itemize}
+}
+}
+{\customcventry{Sep 2018 - Now}{}{Lab Assistant for Stat 133}{Berkeley, CA}{}
+{\begin{itemize}
+  \item I helped students in a lab with 30 students weekly and teach them how to use R to do data analysis
+\end{itemize}
+}
+}
+
+\section{AWARDS AND ACHIEVEMENTS}
+\begin{minipage}{\maincolumnwidth}%
+	\small{
+    	\begin{itemize}
+          \item 2018 Cal DataFest Team of Best Visualization
+          \item Fluent in Chinese
+		\end{itemize}}%
+\end{minipage}%
+}
+
+\end{document}
+
+
+%% end of file `template.tex'.
