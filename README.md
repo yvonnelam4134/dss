@@ -12,7 +12,8 @@ This repo includes the resumes of the following people:
 * Jobs interested in: Bartender, Babysitter, Chief of Surgery
 
 ###### [Cao Jilin]
-* 
+* I’m a senior Stats major student from UC Berkeley and I’m currently looking for a job that
+is related to data analysis and data science. Throughout my college life, I developed a strong programming skills and data analysis skills. The main language I use are Python and R. I also took a data structure class that was taught in Java. I’ve taking core CS classes like Algorithms and Artificial Intelligence that are related to machining leaning. I’ve taken core statistic classes such as Probability, Linear Model, Machining Learning and Deep Learning.
 * Jobs interested in: Data Scientist
 
 ###### [Name of Person that Resume 3 is about]
